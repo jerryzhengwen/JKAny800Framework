@@ -1,0 +1,6 @@
+framework module JKAny800Framework {
+  umbrella header "JKAny800Framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

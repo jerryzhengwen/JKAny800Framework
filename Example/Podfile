@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JKAny800Framework_Example' do
+  pod 'JKAny800Framework', :path => '../'
+
+  target 'JKAny800Framework_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
