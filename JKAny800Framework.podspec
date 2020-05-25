@@ -19,14 +19,15 @@ Pod::Spec.new do |s|
 
   s.description      = "当前版本支持真机和模拟器运行，是关于访客端的SDK，具体使用请联系久科客服进行相关注册appkey和appSecret等"
 
-  s.homepage         = 'https://github.com/ilucklyzhengwen@163.com/JKAny800Framework'
+  s.homepage         = 'https://github.com/jerryzhengwen/JKAny800Framework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ilucklyzhengwen@163.com' => 'jerry.gu@9client.com' }
-  s.source           = { :git => 'https://github.com/ilucklyzhengwen@163.com/JKAny800Framework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jerryzhengwen/JKAny800Framework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.platform     = :ios, "9.0"
   s.libraries = "resolv", "xml2","icucore"
   s.source_files = 'JKAny800Framework/**/Classes/**/*.{h,m}','JKAny800Framework/**/UI/**/*.{h,m}',
   s.public_header_files = 'JKAny800Framework/**/Classes/**/*.h'
