@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 当前版本支持真机和模拟器运行，是关于访客端的SDK，具体使用请联系久科客服进行相关注册appkey和appSecret等"
+  s.description      = "当前版本支持真机和模拟器运行，是关于访客端的SDK，具体使用请联系久科客服进行相关注册appkey和appSecret等"
 
   s.homepage         = 'https://github.com/ilucklyzhengwen@163.com/JKAny800Framework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  s.libraries = "resolv", "xml2","icucore"
   s.source_files = 'JKIMFramework/**/Classes/**/*.{h,m}','JKIMFramework/**/UI/**/*.{h,m}',
   s.public_header_files = 'JKIMFramework/**/Classes/**/*.h'
   s.ios.vendored_libraries = 'JKIMFramework/**/Frameworks/**/*.a'
