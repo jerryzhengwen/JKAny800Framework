@@ -28,15 +28,15 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.libraries = "resolv", "xml2","icucore"
-  s.source_files = 'JKIMFramework/**/Classes/**/*.{h,m}','JKIMFramework/**/UI/**/*.{h,m}',
-  s.public_header_files = 'JKIMFramework/**/Classes/**/*.h'
-  s.ios.vendored_libraries = 'JKIMFramework/**/Frameworks/**/*.a'
-  s.resources = 'JKIMFramework/**/UIKit/**/{JKDialogeModel.xcdatamodeld,JKFace.plist,JKIMImage.bundle,style.css}'
+  s.source_files = 'JKAny800Framework/**/Classes/**/*.{h,m}','JKAny800Framework/**/UI/**/*.{h,m}',
+  s.public_header_files = 'JKAny800Framework/**/Classes/**/*.h'
+  s.ios.vendored_libraries = 'JKAny800Framework/**/Frameworks/**/*.a'
+  s.resources = 'JKAny800Framework/**/UIKit/**/{JKDialogeModel.xcdatamodeld,JKFace.plist,JKIMImage.bundle,style.css}'
   s.xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64 armv7 i386', }
   s.frameworks = 'UIKit', 'MapKit'
   s.requires_arc = false
 
-  s.requires_arc = ['JKIMFramework/**/Classes/*.{h,m}']
+  s.requires_arc = ['JKAny800Framework/**/Classes/*.{h,m}']
   s.dependency 'YYWebImage'
   s.dependency 'MJRefresh'
   s.dependency 'MBProgressHUD', '~> 1.1.0'
