@@ -41,11 +41,4 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh'
   s.dependency 'MBProgressHUD', '~> 1.1.0'
   s.dependency 'IQKeyboardManager'
-  # s.resource_bundles = {
-  #   'JKAny800Framework' => ['JKAny800Framework/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
