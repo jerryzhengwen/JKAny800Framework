@@ -32,7 +32,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'JKIMFramework/**/Classes/**/*.h'
   s.ios.vendored_libraries = 'JKIMFramework/**/Frameworks/**/*.a'
   s.resources = 'JKIMFramework/**/UIKit/**/{JKDialogeModel.xcdatamodeld,JKFace.plist,JKIMImage.bundle,style.css}'
-  # s.libraries = "resolv", "xml2","icucore"
   s.xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64 armv7 i386', }
   s.frameworks = 'UIKit', 'MapKit'
   s.requires_arc = false
