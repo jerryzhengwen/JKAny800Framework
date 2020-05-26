@@ -7,12 +7,12 @@
 //
 
 #import "JKAppDelegate.h"
-
+#import <JKAny800Framework/JKCompanyInfo.h>
 @implementation JKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    JKCompanyInfo * info = [[JKCompanyInfo alloc] initWithAppKey:@"" appId:@""];
     return YES;
 }
 

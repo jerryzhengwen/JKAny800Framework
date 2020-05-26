@@ -4,24 +4,17 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JKAny800Framework (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - JKAny800Framework (from `../`)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
 
-EXTERNAL SOURCES:
-  JKAny800Framework:
-    :path: "../"
-
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JKAny800Framework: f12004db794ba12f7dafdce4ab807cd5f3284bb5
 
-PODFILE CHECKSUM: 568deba0936caee7dfb725760146aae50579b54c
+PODFILE CHECKSUM: 10e17a6142f1516e4488c332e1c7405bad582c66
 
 COCOAPODS: 1.9.1

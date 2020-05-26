@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JKCompanyInfo.h"
-#import "JKCustomer.h"
 #import "JKENUMObject.h"
 #import "JKSurcketModel.h"
+#import "JKAnyCustomer.h"
+#import "JKAnyCompanyInfo.h"
 @class JKMessage;
 @class JKDialogeContentManager;
 
@@ -168,7 +168,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param companyInfo 公司的信息Info
  @param customer 对接访客信息，没有访客信息传nil即可
  */
--(void)initWithCompanyInfo:(JKCompanyInfo *)companyInfo customer:(JKCustomer *)customer;
+-(void)initWithCompanyInfo:(JKAnyCompanyInfo *)companyInfo customer:(JKAnyCustomer *)customer;
 
 /** 发送消息 @param message 发送消息体 */
 -(void)sendMessage:(JKMessage *)message;
@@ -258,7 +258,7 @@ NS_ASSUME_NONNULL_BEGIN
  如果退出，传nil即可。
  @param customer 用户的基本信息
  */
--(void)JKIM_statueChangeWithCustomer:(JKCustomer *)customer;
+-(void)JKIM_statueChangeWithCustomer:(JKAnyCustomer *)customer;
 
 /**
  获取context_id
