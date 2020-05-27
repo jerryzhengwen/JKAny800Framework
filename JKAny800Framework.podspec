@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKAny800Framework'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = '这是久科Any800的sdk，可以快速集成和实现IM聊天'
 
 # This description is used to generate tags and improve search results.

@@ -10,7 +10,7 @@
 #import "JKENUMObject.h"
 #import "JKSurcketModel.h"
 #import "JKAnyCustomer.h"
-#import "JKAnyCompanyInfo.h"
+@class JKAnyCompanyInfo;
 @class JKMessage;
 @class JKDialogeContentManager;
 
