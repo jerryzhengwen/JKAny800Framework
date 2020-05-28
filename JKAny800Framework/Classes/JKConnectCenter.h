@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "JKENUMObject.h"
 #import "JKSurcketModel.h"
-#import "JKAnyCustomer.h"
 @class JKAnyCompanyInfo;
+@class JKAnyCustomer;
 @class JKMessage;
 @class JKDialogeContentManager;
 
@@ -271,6 +271,62 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)needReSendContent:(NSString *)content;
 
+@end
+
+
+@interface JKAnyCompanyInfo : NSObject
+/**
+ 得到当前公司的appKey和appSecret
+ 
+ @param appKey 注册后台生成的appKey
+ @param appId 注册后台生成的appSecret
+ @return 当前对象本身
+ */
+- (instancetype)initWithAppKey:(NSString *)appKey appId:(NSString *)appId;
+/**
+ 设置长链接的地址和服务器以及url的地址和服务器
+ @param serverIP 服务器地址
+ @param serverPort 服务器端口
+ @param urlIP 接口地址
+ @param urlPort 接口端口
+ */
+- (void)setDomainInfoWithServer:(NSString *)serverIP AndPort:(int)serverPort UrlServer:(NSString *)urlIP AndUrlPort:(NSString *)urlPort;
+@end
+@interface JKAnyCustomer : NSObject
+/**
+ 访客昵称 必填
+ */
+@property (nonatomic,copy)NSString *visitor_name;
+/**
+ 访客id 必填
+ */
+@property (nonatomic,copy)NSString *visitor_id;
+/**
+ 邮箱  非必填
+ */
+@property (nonatomic,copy)NSString *email;
+/**
+ 电话  必填
+ */
+@property (nonatomic,copy)NSString *mobile_phone;
+/// qq 非必填
+@property (nonatomic,copy)NSString *qq;
+/**
+ 客户类型
+ */
+@property (nonatomic,copy) NSString *customer_type;
+/**
+ 注册手机号
+ */
+@property (nonatomic,copy) NSString *register_phone;
+/**
+ 客户号
+ */
+@property (nonatomic,copy) NSString *customer_number;
+/**
+ 证件号
+ */
+@property (nonatomic,copy) NSString *certificate_number;
 @end
 
 NS_ASSUME_NONNULL_END
