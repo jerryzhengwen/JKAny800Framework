@@ -1,6 +1,6 @@
 {
   "name": "JKAny800Framework",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "summary": "这是久科Any800的sdk，可以快速集成和实现IM聊天",
   "description": "当前版本支持真机和模拟器运行，是关于访客端的SDK，具体使用请联系久科客服进行相关注册appkey和appSecret等",
   "homepage": "https://github.com/jerryzhengwen/JKAny800Framework",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jerryzhengwen/JKAny800Framework.git",
-    "tag": "0.0.6"
+    "tag": "0.0.7"
   },
   "platforms": {
     "ios": "9.0"
